@@ -8,6 +8,23 @@ Repositorio com algumas dicas de front-end para o curso do senac
 
 Básicamente é uma regra que se aplica a um ou varios elementos html dispostos na tela, estas regras tem potuações e hierarquias
 
+### exemplo de regras:
+
+* div nav
+
+* .nome-da-classe
+
+* #nome-do-id
+
+* div > ul
+
+* div + div
+
+
+[Mais exemplos de seletores](https://code.tutsplus.com/pt/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+
+
+### pontuação de seletores
 
 * Elementos 1 ponto
 
@@ -19,6 +36,4 @@ Básicamente é uma regra que se aplica a um ou varios elementos html dispostos 
 
 * !importante 1000 pontos
 
-
-Link de apoio:
-[exemplo de seletores](https://code.tutsplus.com/pt/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+[referencia pontuacao de seletores](https://tableless.com.br/pontuacao-especificidade-css/)
