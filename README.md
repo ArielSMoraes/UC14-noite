@@ -2,7 +2,7 @@
 Repositorio com algumas dicas de front-end para o curso do senac
 
 # Conteúdo
-1. [Seletores CSS](#seletores-CSS)
+1. [Seletores CSS](#seletores-css)
 2. [Pontuação de seletores](#pontuacao-de-seletores)
 3. [Javascript](#javascript)
 4. [Váriaveis](#variaveis)
@@ -79,7 +79,7 @@ div > ul {
 [Mais exemplos de seletores](https://code.tutsplus.com/pt/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
 
-### Pontuação de seletores
+### Pontuacao de seletores
 
 * Elementos 1 ponto
 
@@ -143,7 +143,7 @@ div #meu-id .minha-classe {
 O Javascript é uma linguagem prototipada, feita inicialmente para rodar em um browser, então, básicamente todos navegadores a utilizão.
 É ela que adiciona dinamismo a aplicações webs, interagindo com o usuário.
 
-#### Váriaveis
+#### Variaveis
 
 Para se declarar váriaveis em javascript é utilizado o token `var`, e as váriaveis pertencem ao escopo de suas funções
 ```javascript
@@ -173,7 +173,7 @@ meuObjeto1.name // ira retornar o valor da propriedade name dentro do meu objeto
 ```
 
 
-#### Funções
+#### Funcoes
 
 essa função `dataAtual` ao ser chamada ex: `dataAtual()` irá retornar uma string com a data atual
 ```javascript
