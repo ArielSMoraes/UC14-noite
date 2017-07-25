@@ -162,7 +162,7 @@ Para acessar o valor das váriaveis é usada a seguinte forma:
 ```javascript
 numero // ira retornar o valor dentro de numero
 array1[0] // ira retornar o valor dentro do array na posição zero
-meuObjeto1.name irá retornar o valor da propriedade name dentro do meu objeto
+meuObjeto1.name // ira retornar o valor da propriedade name dentro do meu objeto
 ```
 
 
