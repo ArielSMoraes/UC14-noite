@@ -139,7 +139,7 @@ O Javascript é uma linguagem prototipada, feita inicialmente para rodar em um b
 #### Váriaveis
 
 Para se declarar váriaveis em javascript é utilizado o token `var`, e as váriaveis pertencem ao escopo de suas funções
-```
+```javascript
 var numero = 10;
 var string = "texto";
 var array1 = [];
@@ -150,7 +150,7 @@ var meuObjeto2 = new Object();
 
 Para atribulir novos valores para as váriaveis é assim:
 
-```
+```javascript
 numero = 20;
 array1[0] = "novo texto"; // ou
 array1.push("novo texto");
@@ -159,7 +159,7 @@ meuObjeto1.name = "meu nome";
 ```
 
 Para acessar o valor das váriaveis é usada a seguinte forma:
-```
+```javascript
 numero // ira retornar o valor dentro de numero
 array1[0] // ira retornar o valor dentro do array na posição zero
 meuObjeto1.name irá retornar o valor da propriedade name dentro do meu objeto
@@ -169,14 +169,14 @@ meuObjeto1.name irá retornar o valor da propriedade name dentro do meu objeto
 #### funções
 
 essa função `dataAtual` ao ser chamada ex: `dataAtual()` irá retornar uma string com a data atual
-```
+```javascript
 function dataAtual() {
   return Date();
 }
 ```
 
 Já está função recebe dois parametros e retorna sua soma ex : `somaDoisNumeros(10,30)`
-```
+```javascript
 function somaDoisNumeros(num1, num2) {
   return num1 + num2;
 }
