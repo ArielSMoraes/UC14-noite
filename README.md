@@ -7,8 +7,10 @@ Repositorio com algumas dicas de front-end para o curso do senac
 3. [Javascript](#javascript)
 4. [Váriaveis](#variaveis)
 5. [Funcoes](#funcoes)
+6. [DOM](#dom)
+7. [eventos](#eventos)
 
-
+Eventos
 ## Seletores CSS
 
 *O que é um seletor css?*
@@ -138,12 +140,12 @@ div #meu-id .minha-classe {
 
 ## Javascript
 
-### Sobre a linguagem
+## Sobre a linguagem
 
 O Javascript é uma linguagem prototipada, feita inicialmente para rodar em um browser, então, básicamente todos navegadores a utilizão.
 É ela que adiciona dinamismo a aplicações webs, interagindo com o usuário.
 
-#### Variaveis
+### Variaveis
 
 Para se declarar váriaveis em javascript é utilizado o token `var`, e as váriaveis pertencem ao escopo de suas funções
 ```javascript
@@ -172,8 +174,7 @@ array1[0] // ira retornar o valor dentro do array na posição zero
 meuObjeto1.name // ira retornar o valor da propriedade name dentro do meu objeto
 ```
 
-
-#### Funcoes
+### Funcoes
 
 essa função `dataAtual` ao ser chamada ex: `dataAtual()` irá retornar uma string com a data atual
 ```javascript
@@ -189,3 +190,53 @@ function somaDoisNumeros(num1, num2) {
 }
 ```
 
+### DOM
+(Document Object Model)
+
+Toda manipulação feita no html atraves de javascript é uma manipulação de DOM
+
+O elemento `document` do javascript é o que se utiliza para manipular a DOM
+[W3C DOM](https://www.w3schools.com/jsref/dom_obj_document.asp)
+
+Selecionar elementos:
+```javascript
+  document.querySelector("#meuId")
+  document.querySelector(".minhaClasse")
+  document.querySelector("button")
+```
+
+Criar elementos do tipo texto:
+```javascript
+  document.createTextNode("meu texto")
+```
+
+Criar elementos HTML:
+```javascript
+  document.createElement("LI")
+```
+
+
+### Eventos
+
+O dentro do Javascript existe uma serie de eventos que acontecem, os quais podem ser atrelado funções a eles, ou seja, se pode dar algum significado customizado para este evento.
+
+Existem algumas formas de se capturar esses eventos:
+
+Diretamente no HTML
+```html
+<!-- lembrando que sempre se deve passar uma função para o evento -->
+<div onclick="minhaFuncao()"></div>
+<input onkeyup="minhaOutraFuncao()" />
+```
+
+Pelo document do Javascript
+
+```html
+<button id="meuBotao">Clicar!</button>
+```
+
+```javascript
+var botao = document.querySelector("#meuBotao");
+botao.addEventListener("click", minhaFuncao);
+//deve se tomar o cuidado para que, ao passar a função de referencia ao addEventListener, ela não tenha as ()
+```
