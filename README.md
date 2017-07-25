@@ -128,3 +128,58 @@ div #meu-id .minha-classe {
 ```
 
 [referencia pontuacao de seletores](https://tableless.com.br/pontuacao-especificidade-css/)
+
+## Javascript
+
+### Sobre a linguagem
+
+O Javascript é uma linguagem prototipada, feita inicialmente para rodar em um browser, então, básicamente todos navegadores a utilizão.
+É ela que adiciona dinamismo a aplicações webs, interagindo com o usuário.
+
+#### Váriaveis
+
+Para se declarar váriaveis em javascript é utilizado o token `var`, e as váriaveis pertencem ao escopo de suas funções
+```
+var numero = 10;
+var string = "texto";
+var array1 = [];
+var array 2 = new Array();
+var meuObjeto1 = {};
+var meuObjeto2 = new Object();
+```
+
+Para atribulir novos valores para as váriaveis é assim:
+
+```
+numero = 20;
+array1[0] = "novo texto"; // ou
+array1.push("novo texto");
+
+meuObjeto1.name = "meu nome";
+```
+
+Para acessar o valor das váriaveis é usada a seguinte forma:
+```
+numero // ira retornar o valor dentro de numero
+array1[0] // ira retornar o valor dentro do array na posição zero
+meuObjeto1.name irá retornar o valor da propriedade name dentro do meu objeto
+```
+
+
+#### funções
+
+essa função `dataAtual` ao ser chamada ex: `dataAtual()` irá retornar uma string com a data atual
+```
+function dataAtual() {
+  return Date();
+}
+```
+
+Já está função recebe dois parametros e retorna sua soma ex : `somaDoisNumeros(10,30)`
+```
+function somaDoisNumeros(num1, num2) {
+  return num1 + num2;
+}
+```
+
+
