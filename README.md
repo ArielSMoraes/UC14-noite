@@ -9,6 +9,7 @@ Repositorio com algumas dicas de front-end para o curso do senac
 5. [Funcoes](#funcoes)
 6. [DOM](#dom)
 7. [eventos](#eventos)
+8. [Colocando texto na tela](#colocando-texto-na-tela)
 
 Eventos
 ## Seletores CSS
@@ -239,4 +240,23 @@ Pelo document do Javascript
 var botao = document.querySelector("#meuBotao");
 botao.addEventListener("click", minhaFuncao);
 //deve se tomar o cuidado para que, ao passar a função de referencia ao addEventListener, ela não tenha as ()
+```
+
+### Colocando texto na tela
+
+Pensando que temos o seguinte HTML
+```html
+<body>
+  <div>
+    <p id="#meuParagrafo">Olá</p>  
+  <div>
+</body>
+```
+
+E queremos alterar o texto que existe neste html, no caso o "Olá" para "Olá mundo"
+Usamos o seguinte script
+```javascript
+var paragrafo = querySelector("#meuParagrafo");
+paragrafo.textContent = "Olá mundo"; // ou
+paragrafo.innerHTML = "Olá mundo"; // o innerHTML tem mais poder, aceita tags html
 ```
