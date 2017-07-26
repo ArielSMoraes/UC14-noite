@@ -248,7 +248,7 @@ Pensando que temos o seguinte HTML
 ```html
 <body>
   <div>
-    <p id="#meuParagrafo">Olá</p>  
+    <p id="meuParagrafo">Olá</p>  
   <div>
 </body>
 ```
