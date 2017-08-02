@@ -119,3 +119,7 @@ main h2 {
     height: 50%;
     background-color: red;
 }
+
+.showModal {
+    display: block !important;
+}
