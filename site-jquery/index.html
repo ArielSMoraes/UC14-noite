@@ -3,6 +3,9 @@
 <head>
     <link rel="stylesheet" href="style.css" />
     <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='jquery.modal.css' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="jquery.modal.js"></script>
 </head>
 
 <body>
@@ -27,37 +30,73 @@
                 <figure>
                     <img src="images/pics01.jpg" alt="">
                 </figure>
+                <h4>Conteudo 1</h4>
                 <p>
                     Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
                 </p>
-                <button>READ MORE</button>
+                <button><a href="#content1" rel="modal:open"> READ MORE </a></button>
+                <div id="content1" style="display:none;">
+                    <figure>
+                        <img src="images/pics01.jpg" alt="">
+                    </figure>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                </div>
             </div>
             <div>
                 <figure>
                     <img src="images/pics01.jpg" alt="">
                 </figure>
+                <h4>Conteudo 2</h4>
                 <p>
                     Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
                 </p>
-                <button>READ MORE</button>
+                <button id="content2-open">READ MORE</button>
+                <div id="content2" style="display:none;">
+                    <figure>
+                        <img src="images/pics01.jpg" alt="">
+                    </figure>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                </div>
             </div>
             <div>
                 <figure>
                     <img src="images/pics01.jpg" alt="">
                 </figure>
+                <h4>Conteudo 3</h4>
                 <p>
                     Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
                 </p>
-                <button>READ MORE</button>
+                <button><a href="#content1" rel="modal:open"> READ MORE </a></button>
+                <div id="content1" style="display:none;">
+                    <figure>
+                        <img src="images/pics01.jpg" alt="">
+                    </figure>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                </div>
             </div>
             <div>
                 <figure>
                     <img src="images/pics01.jpg" alt="">
                 </figure>
+                <h4>Conteudo 4</h4>
                 <p>
                     Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.
                 </p>
-                <button>READ MORE</button>
+                <button><a href="#content1" rel="modal:open"> READ MORE </a></button>
+                <div id="content1" style="display:none;">
+                    <figure>
+                        <img src="images/pics01.jpg" alt="">
+                    </figure>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. A ordem dos tratores não altera o pão duris. Tá deprimidis, eu conheço uma cachacis que pode alegrar sua vidis.</p>
+                </div>
             </div>
         </div>
     </main>
@@ -65,14 +104,7 @@
     <footer>
 
     </footer>
-    <div class="modal">
-        <div class="modal-layer" data-id="pic1">
-        </div>
-        <div class="modal-content">
-            Sou uma modal
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <script src="scriptJquery.js"></script>
 </body>
 
 </html>
