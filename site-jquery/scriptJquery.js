@@ -20,3 +20,17 @@ $("#content2-open").click(function() {
         fadeDelay: 1
     });
 })
+
+//Requisições AJAX
+
+$.get("https://swapi.co/api/people/55", function(data) {
+    $(".main-content-row h4").each(function() {
+        var titulo = $(this);
+        var peso = $(this).next();
+        var altura = peso.next();
+
+        titulo.text(data.name);
+        peso.text(peso.text() + data.mass);
+        altura.text(altura.text() + data.height);
+    })
+});
