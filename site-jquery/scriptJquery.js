@@ -23,14 +23,29 @@ $("#content2-open").click(function() {
 
 //Requisições AJAX
 
-$.get("https://swapi.co/api/people/55", function(data) {
-    $(".main-content-row h4").each(function() {
-        var titulo = $(this);
-        var peso = $(this).next();
-        var altura = peso.next();
-
-        titulo.text(data.name);
-        peso.text(peso.text() + data.mass);
-        altura.text(altura.text() + data.height);
-    })
+$.get("https://swapi.co/api/starships/", function(data) {
+    $(data.results).each(function(index) {
+        var nave = gerarNave(this, index);
+        $(".main-content-row").append(nave);
+    });
+    var modal = gerarModal();
+    $("body").append(modal);
 });
+
+function gerarModal() {
+    var modal = `
+        <div id="content1" style="display:none;">
+             Modal
+        </div>`;
+    return modal;
+}
+
+function gerarNave(ship, index) {
+    var nave = `<div class=${index}>
+        <h4>${ship.name}</h4>
+        <span class="peso">Modelo: ${ship.model} </span>
+        <span class="altura">passageiros: ${ship.passengers} </span>
+        <button><a href="#content1" rel="modal:open"> READ MORE </a></button>
+    </div>`;
+    return nave;
+}
