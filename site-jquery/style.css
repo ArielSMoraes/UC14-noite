@@ -60,14 +60,20 @@ main h2 {
     margin-top: 30px;
 }
 
-.main-content-row div {
-    width: 20%;
-    display: inline-block;
-    margin: 0 2.5%;
+.main-content-row h4 {
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 900;
 }
 
-.main-content-row div:first-child {
-    margin-left: 0;
+.main-content-row div {
+    width: 19%;
+    display: inline-block;
+    margin: 0 2.5%;
+    margin-bottom: 50px;
+    border: solid 1px;
+    border-radius: 10px;
 }
 
 .main-content-row div div:last-child {
@@ -84,11 +90,28 @@ main h2 {
     line-height: 30px;
 }
 
+.main-content-row span {
+    display: block;
+    padding: 10px;
+}
+
+.main-content-row strong {
+    font-weight: bold;
+}
+
 .main-content-row button {
     padding: 15px;
     background-color: #111;
     color: white;
     border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.main-content-row button a {
+    color: white;
+    text-decoration: none;
 }
 
 .active-content {
@@ -117,7 +140,8 @@ main h2 {
     position: fixed;
     width: 50%;
     height: 50%;
-    background-color: red;
+    background-color: antiquewhite;
+    padding: 50px;
 }
 
 .showModal {
